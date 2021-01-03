@@ -1,3 +1,9 @@
+/*
+  Devices used:
+  LCD Display: LCM 1602 IIC V1
+  Distance Ultrasonic Measurment: HC-SR04
+*/
+
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
@@ -9,7 +15,7 @@ LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 4 lines and 20
 void setup()
 {
   pinMode(trigPin, OUTPUT); //Pin, with trig as exit
-  pinMode(echoPin, INPUT); //echo as enter point
+  pinMode(echoPin, INPUT); //pin with echo as enter point
   lcd.init(); // initialize the lcd.
   lcd.backlight();
   lcd.setCursor(3,0);
@@ -28,7 +34,7 @@ void loop()
   lcd.clear();
 }
 
-  //this method relies on the impuls devise documentation
+//this method relies on the impuls devise documentation https://www.mpja.com/download/hc-sr04_ultrasonic_module_user_guidejohn.pdf
 int measure_distance ()
 {
   long time, distance;
@@ -40,7 +46,7 @@ int measure_distance ()
   digitalWrite(trigPin, LOW);
  
   time = pulseIn(echoPin, HIGH);
-  distance = time / 58;                //width of reflected impuls in uS divided by 58  gives length in cm
+  distance = time / 58; //width of reflected impuls in uS divided by 58  gives length in cm
 
   return distance;
 }
