@@ -20,6 +20,6 @@ First project with 2 devices and breadboard. Both devices on 5V voltage.
 Extension of the last project where I started learning how to connect LEDs with resistors. Code did not change a lot, but it had to account for leds being connected to digital pins.
 **The whole setup**
 ![Imgur](https://i.imgur.com/lAeNchB.jpg)
-![Imgur](https://i.imgur.com/lAeNchB.jpg)
+![Imgur](https://i.imgur.com/ZL804JO.jpg)
 ![Imgur](https://i.imgur.com/fpXZxxa.jpg)
 ![Imgur](https://i.imgur.com/N0v6yGK.jpg)
