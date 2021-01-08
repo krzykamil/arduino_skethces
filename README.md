@@ -1,4 +1,4 @@
-# Project with descriptions
+# Projects with descriptions
 
 1. [Display distance from object on LCD screen](#lcd_with_ultrasound_measurment)
 2. [Display distance from object on LCD screen with LEDs](#lcd_with_distance_leds)
